@@ -27,7 +27,6 @@ function App(): JSX.Element {
   const navigate = useNavigate()
   
   const [user, setUser] = useState<User | null>(authService.getUser())
-
   const [profiles, setProfiles] = useState<Profile[]>([])
 
   const handleLogout = (): void => {
@@ -52,7 +51,9 @@ function App(): JSX.Element {
     user ? fetchProfiles() : setProfiles([])
   }, [user])
 
-  return (
+console.log(profiles)
+
+return (
     <>
       <NavBar user={user} handleLogout={handleLogout} />
       <Routes>
@@ -69,7 +70,7 @@ function App(): JSX.Element {
           path="/profiles"
           element={
             <ProtectedRoute user={user}>
-              <Profiles />
+              <Profiles profiles={profiles}/>
             </ProtectedRoute>
           }
         />

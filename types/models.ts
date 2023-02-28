@@ -2,6 +2,15 @@
 
 // ---------- Auth Forms -----------
 
+export interface Vote {
+  id: number;
+  value: number;
+  profileId: number;
+  voterId: number;
+  createdAt: string;
+  updatedAt: string;
+}
+
 export interface Profile {
   name: string;
   photo?: string;
