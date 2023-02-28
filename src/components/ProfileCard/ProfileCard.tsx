@@ -1,5 +1,6 @@
 // assets
 import defaultPic from '../../assets/icons/profile.png'
+import { VoteManagerFormData } from '../../types/forms';
 
 // types
 import { Profile } from '../../types/models'
@@ -9,6 +10,7 @@ import VoteManager from '../VoteManager/VoteManager'
 
 interface ProfileCardProps {
   profile: Profile;
+  handleVote: (formdata: VoteManagerFormData) => void;
 }
 
 const ProfileCard = (props: ProfileCardProps): JSX.Element => {
