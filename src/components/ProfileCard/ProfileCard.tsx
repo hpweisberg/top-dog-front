@@ -8,6 +8,8 @@ import { Profile } from '../../types/models'
 // components
 import VoteManager from '../VoteManager/VoteManager'
 
+import styles from './ProfileCard.module.css'
+
 interface ProfileCardProps {
   profile: Profile;
   handleVote: (formdata: VoteManagerFormData) => void;
@@ -18,13 +20,16 @@ const ProfileCard = (props: ProfileCardProps): JSX.Element => {
 
   const profilePic = profile.photo ? profile.photo : defaultPic
 
-  return ( 
-    <article>
-      <img src={profilePic} alt={`${profile.name}'s avatar`} />
-      <h1>{profile.name}</h1>
+  return (
+    <div className={styles.cardContainer}>
 
-      <VoteManager { ...props } />
-    </article>
+      <article>
+        <img src={profilePic} alt={`${profile.name}'s avatar`} />
+        <h1>{profile.name}</h1>
+
+        <VoteManager {...props} />
+      </article>
+    </div>
   )
 }
 

@@ -8,6 +8,8 @@ import noBone from '../../assets/icons/noBone.png'
 import { Profile } from '../../types/models'
 import { VoteManagerFormData } from '../../types/forms'
 
+import styles from './VoteManager.module.css'
+
 interface VoteManagerProps {
   profile: Profile;
   handleVote: (formData: VoteManagerFormData) => void;
@@ -43,6 +45,7 @@ const VoteManager = (props: VoteManagerProps): JSX.Element => {
     <section>
       {ratingOptions.map((rating: number): JSX.Element => (
         <img
+        className={styles.bone}
           id={rating.toString()}
           key={rating}
           onClick={handleClick}
