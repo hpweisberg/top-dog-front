@@ -62,6 +62,7 @@ const ChangePasswordForm = (props: AuthFormProps): JSX.Element => {
           value={oldPassword}
           name="oldPassword"
           onChange={handleChange}
+          required
         />
       </div>
       <div className={styles.inputContainer}>
@@ -74,6 +75,7 @@ const ChangePasswordForm = (props: AuthFormProps): JSX.Element => {
           value={newPassword}
           name="newPassword"
           onChange={handleChange}
+          required
         />
       </div>
       <div className={styles.inputContainer}>
@@ -86,11 +88,12 @@ const ChangePasswordForm = (props: AuthFormProps): JSX.Element => {
           value={newPasswordConf}
           name="newPasswordConf"
           onChange={handleChange}
+          required
         />
       </div>
       <div className={styles.inputContainer}>
         <button disabled={isFormInvalid()} className={styles.button}>
-          Change Password
+          Submit
         </button>
         <Link to="/">
           <button>Cancel</button>

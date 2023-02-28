@@ -19,9 +19,11 @@ const Signup = (props: SignupProps): JSX.Element => {
 
   return (
     <main className={styles.container}>
+      <div className={styles.formContainer}>
       <h1>Sign Up</h1>
       <p>{message}</p>
       <SignupForm {...props} updateMessage={updateMessage} />
+      </div>
     </main>
   )
 }

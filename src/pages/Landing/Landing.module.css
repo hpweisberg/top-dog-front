@@ -6,6 +6,7 @@
   background: url('../../assets/rays.svg');
   background-position: center center;
   background-size: cover;
+  gap: 5em
 }
 
 .container>h1 {
@@ -49,4 +50,5 @@
   box-shadow: -1px 5px 19px -5px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: -1px 5px 19px -5px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: -1px 5px 19px -5px rgba(0, 0, 0, 0.25);
+  /* margin-top: 6em; */
 }

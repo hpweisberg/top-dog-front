@@ -1,9 +1,10 @@
 .container {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
+  margin: 2em;
 }
 
 .label,
@@ -13,4 +14,41 @@
 
 .inputContainer {
   margin-bottom: 1rem;
+}
+
+.inputContainer > input {
+  background-color: rgb(0, 0, 0);
+  align-items: flex-end;
+  /* border-radius: 10px; */
+  border: 0;
+  border-bottom: groove;
+  color: whitesmoke;
+  margin-top: .6em;
+  
+}
+.inputContainer > label {
+  color: rgb(255, 255, 255);
+  align-items: flex-end;
+  border-radius: 10px;
+}
+
+button {
+  border-radius: 10px;
+  border: none;
+  background-color: #af4c4c;
+  padding: .6em 1.5em;
+  color: rgba(245, 245, 245, 0.829);
+}
+.button {
+  background-color: #4CAF50;
+}
+
+button:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  /* outline-color: aliceblue; */
+}
+
+.photoBtn {
+  background-color: red;
 }

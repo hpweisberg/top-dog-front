@@ -117,6 +117,7 @@ const SignupForm = (props: AuthFormProps): JSX.Element => {
         <input
           type="file"
           id="photo-upload"
+          className={styles.photoBtn}
           name="photo"
           onChange={handleChangePhoto}
         />
