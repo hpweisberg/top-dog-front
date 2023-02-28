@@ -65,8 +65,6 @@ function App(): JSX.Element {
     user ? fetchProfiles() : setProfiles([])
   }, [user])
 
-console.log(profiles)
-
 return (
     <>
       <NavBar user={user} handleLogout={handleLogout} />

@@ -85,7 +85,7 @@ article {
   -moz-box-shadow: -1px 5px 19px -5px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: -1px 5px 19px -5px rgba(0, 0, 0, 0.25);
   /* width: 50%; */
-  margin: 2em;
+  margin: 3em;
 }
 
 article section {
@@ -164,6 +164,7 @@ nav {
   align-items: center;
   background: white;
   border-bottom: 1px solid rgb(200, 200, 200);
+  /* margin-bottom: 12em; */
 }
 
 nav img {
