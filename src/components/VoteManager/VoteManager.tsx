@@ -1,6 +1,6 @@
 // assets
-import bone from '../../assets/icons/bean.png'
-import noBone from '../../assets/icons/noBean.png'
+import bone from '../../assets/icons/bone.png'
+import noBone from '../../assets/icons/noBone.png'
 
 // types
 import { Profile } from '../../types/models'
