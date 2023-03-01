@@ -8,7 +8,7 @@ Click on Sign up to creat your profile. Veiw all profiles from the nav bar to ge
 
 # [Checkout Top Dog Here!](https://topdog-hw.netlify.app//)
 
-![MAMBA Game Screenshot](./src/assets/screenShot.png)
+![MAMBA Game Screenshot](./src/assets/Screenshot.png)
 
 ## Technologies Used 💾
 
