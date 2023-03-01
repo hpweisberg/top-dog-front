@@ -19,7 +19,6 @@
 .inputContainer > input {
   background-color: rgb(0, 0, 0);
   align-items: flex-end;
-  /* border-radius: 10px; */
   border: 0;
   border-bottom: groove;
   color: whitesmoke;
@@ -46,14 +45,8 @@ button {
 button:hover {
   cursor: pointer;
   color: rgb(255, 255, 255);
-  /* outline-color: aliceblue; */
 }
 
-
-.inputContainer > .photoBtn  {
-  /* background-color: red; */
-  /* height: 4em; */
-}
 
 input[type="file"] {
   color: rgba(245, 245, 245, 0.829);
@@ -65,6 +58,7 @@ input::file-selector-button{
   border: none;
   margin-bottom: .5em;
 }
+
 input::file-selector-button:hover{
   cursor: pointer;
 }

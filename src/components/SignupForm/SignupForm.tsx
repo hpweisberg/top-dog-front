@@ -4,13 +4,15 @@ import { Link, useNavigate } from 'react-router-dom'
 
 // services
 import * as authService from '../../services/authService'
+import * as profileService from '../../services/profileService'
+
 
 // stylesheets
 import styles from './SignupForm.module.css'
 
 // types
 import { AuthFormProps } from '../../types/props'
-import { SignupFormData, PhotoFormData } from '../../types/forms'
+import { SignupFormData, PhotoFormData, GiphyFormData } from '../../types/forms'
 import { handleErrMsg } from '../../types/validators'
 
 const SignupForm = (props: AuthFormProps): JSX.Element => {
@@ -28,6 +30,10 @@ const SignupForm = (props: AuthFormProps): JSX.Element => {
     photo: null
   })
 
+  // const [gifData, setGifData] = useState<GiphyFormData>({
+  //   giphy: ''
+  // })
+
   const handleChange = (evt: React.ChangeEvent<HTMLInputElement>) => {
     updateMessage('')
     setFormData({ ...formData, [evt.target.name]: evt.target.value })
@@ -37,12 +43,18 @@ const SignupForm = (props: AuthFormProps): JSX.Element => {
     if (evt.target.files) setPhotoData({ photo: evt.target.files.item(0) })
   }
 
+  // const handleGetGif = () => {
+    
+  //   setGifData(gifUrl)
+  // }
+
   const handleSubmit = async (evt: React.FormEvent): Promise<void> => {
     evt.preventDefault()
     if(isSubmitted) return
     try {
       setIsSubmitted(true)
       await authService.signup(formData, photoData)
+      // await profileService.getGif(setGifData(gifUrl))
       handleAuthEvt()
       navigate('/')
     } catch (err) {

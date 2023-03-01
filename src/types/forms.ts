@@ -5,6 +5,11 @@ export interface VoteManagerFormData {
   profileId: number;
 }
 
+export interface GiphyFormData {
+  giphy: string;
+}
+
+
 
 /* ---------===== auth forms =====--------- */
 

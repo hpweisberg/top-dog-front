@@ -12,6 +12,44 @@ import {
 import { User } from '../types/models'
 
 const BASE_URL = `${import.meta.env.VITE_BACK_END_SERVER_URL}/api/auth`
+// const GIPHY = `https://api.giphy.com/v1/gifs/search?${import.meta.env.GIPHY_API_KEY}/&tag=dog&rating=g`
+
+// async function getGif(): Promise<string> {
+//   try {
+//     const res = await fetch(`https://api.giphy.com/v1/gifs/search?q=dog&rating=g&api_key=${import.meta.env.GIPHY_API_KEY}`, {
+//       method: 'GET',
+//       headers: { 'Content-Type': 'application/json' },
+//     })
+//     const json = await res.json()
+//     if (json.data && json.data.length > 0) {
+//       const gifUrl = json.data[0].images.original.url
+//       const user = tokenService.getUserFromToken()
+//       if (user && user.profile) {
+//         const profile = user.profile
+//         profile.giphy = gifUrl
+//         return gifUrl
+//       }
+//     }
+//     throw new Error('Failed to get a GIF')
+//   } catch (error) {
+//     throw error
+//   }
+// }
+
+// async function getGif(): Promise<string> {
+//   try {
+//     const json = await fetch(`${GIPHY}`, {
+//       method: 'GET',
+//       headers: { 'Content-Type': 'application/json' },
+//     })
+//     const user = tokenService.getUserFromToken()
+//     if (user){
+//       return await res.json() as Profile
+//     }
+//   } catch (error) {
+//     throw error
+//   }
+// } 
 
 async function signup(
   formData: SignupFormData, 

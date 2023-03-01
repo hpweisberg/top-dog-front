@@ -16,6 +16,7 @@ export interface Vote {
 export interface Profile {
   name: string;
   photo?: string;
+  giphy: string;
   id: number;
   createdAt: string;
   updatedAt: string;
