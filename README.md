@@ -8,7 +8,7 @@ Click on Sign up to creat your profile. Veiw all profiles from the nav bar to ge
 
 # [Checkout Top Dog Here!](https://topdog-hw.netlify.app//)
 
-![Landing Page Screenshot](./src/assets/Screenshot.png)
+![Landing Page Screenshot](./public/Screenshot.png)
 
 ## Technologies Used 💾
 
