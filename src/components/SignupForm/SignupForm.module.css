@@ -51,16 +51,22 @@ button:hover {
 
 
 .inputContainer > .photoBtn  {
-  background-color: red;
-  height: 4em;
+  /* background-color: red; */
+  /* height: 4em; */
 }
 
 input[type="file"] {
-  color: blue;
+  color: rgba(245, 245, 245, 0.829);
 }
 
 input::file-selector-button{
-  background-color: #4CAF50;
+  background-color: #a3af4c;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: .5em;
+}
+input::file-selector-button:hover{
+  cursor: pointer;
 }
 
 .photoBtn:hover{
