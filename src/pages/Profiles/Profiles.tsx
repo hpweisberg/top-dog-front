@@ -19,6 +19,8 @@ const Profiles = (props: ProfileProps): JSX.Element => {
 
   if(!profiles.length) return <p>No profiles yet</p>
 
+
+
   return (
     <>
       <h1>Hello. This is a list of all the profiles.</h1>

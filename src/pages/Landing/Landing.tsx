@@ -1,5 +1,6 @@
 // stylesheets
 import styles from './Landing.module.css'
+import logo from '../../assets/logo.svg'
 
 // services
 import * as authService from '../../services/authService'
@@ -22,6 +23,7 @@ const Landing = (props: LandingProps): JSX.Element => {
   return (
     <main className={styles.container}>
       <h1>TOP DOG</h1>
+      <img src={logo} alt="" />
       {user &&
         <button onClick={handleDeleteAccount}>
           DELETE ACCOUNT
