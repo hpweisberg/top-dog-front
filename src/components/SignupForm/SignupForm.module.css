@@ -49,6 +49,20 @@ button:hover {
   /* outline-color: aliceblue; */
 }
 
-.photoBtn {
+
+.inputContainer > .photoBtn  {
   background-color: red;
+  height: 4em;
+}
+
+input[type="file"] {
+  color: blue;
+}
+
+input::file-selector-button{
+  background-color: #4CAF50;
+}
+
+.photoBtn:hover{
+  cursor: pointer;
 }

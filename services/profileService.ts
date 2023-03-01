@@ -5,7 +5,7 @@ import * as tokenService from './tokenService'
 import { Profile } from '../types/models'
 
 const BASE_URL = `${import.meta.env.VITE_BACK_END_SERVER_URL}/api/profiles`
-const GIPHY_URL = `https://api.giphy.com/v1/gifs/search?api_key=${import.meta.env.VITE_BACK_END_SERVER_URL}&q=dog&limit=25&offset=0&rating=g&lang=en`
+// const GIPHY_URL = `https://api.giphy.com/v1/gifs/search?api_key=${import.meta.env.VITE_BACK_END_SERVER_URL}&q=dog&limit=25&offset=0&rating=g&lang=en`
 
 
 async function getAllProfiles(): Promise<Profile[]> {
@@ -55,4 +55,4 @@ async function makeGif(
   }
 }
 
-export { getAllProfiles, addPhoto, makeGif }
+export { getAllProfiles, addPhoto }
